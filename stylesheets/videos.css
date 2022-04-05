@@ -1,0 +1,17 @@
+.videos a {
+    position: center;
+}
+.videos video {
+    width: 448px;
+    height: 252px;
+}
+.videos figure {
+    margin: 0;
+    float: left;
+    width: 28%;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    border: 0.025rem solid rgb(11, 136, 238);
+    background-color: black;
+}

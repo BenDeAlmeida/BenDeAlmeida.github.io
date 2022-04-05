@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" href="/stylesheets/videos.css">
+    <link rel="stylesheet" href="/stylesheets/global.css">
+</head>
+
+
+<body>
+    <script>
+        var videos = []
+        divide = document.createElement("div")
+        divide.className = "videos"
+
+        function add_video(item, index) {
+            figure = document.createElement("figure")
+
+            video = document.createElement("video")
+            video.controls = true
+
+            source = document.createElement("source")
+            source.src = item + ".mp4"
+            source.type = "video/mp4"
+
+            caption = document.createElement("figcaption")
+            text = document.createElement("a")
+            text.text = item
+
+            caption.appendChild(text)
+            video.appendChild(source)
+            figure.appendChild(caption)
+            figure.appendChild(video)
+            divide.appendChild(figure)
+        }
+        videos.forEach(add_video)
+
+        document.body.appendChild(divide)
+    </script>
+</body>

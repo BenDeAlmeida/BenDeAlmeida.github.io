@@ -1,0 +1,9 @@
+html {
+    background-color: black;
+    background-image: url("/background.png");
+    background-size: 100%;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
